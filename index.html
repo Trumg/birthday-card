@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday!</title>
+    <title>Happy Birthday PiAnn!</title>
     <style>
         body {
             display: flex;
@@ -14,6 +14,11 @@
             font-family: Arial, sans-serif;
             text-align: center;
             position: relative;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
         }
         .card {
             background: white;
@@ -42,11 +47,8 @@
             height: 100%;
             pointer-events: none;
         }
-        .top-left-img {
-            position: absolute;
-            top: 100px;
-            left: 50px;
-            width: 360px;
+        .drawing {
+            width: 400px;
             height: auto;
         }
         .top-right-gif {
@@ -73,16 +75,17 @@
     </style>
 </head>
 <body>
-    <img class="top-left-img" src="image.png" alt="Birthday Drawing">
-    <img class="top-right-gif" src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" alt="Spinning Cat GIF">
-    <img class="bottom-left-gif" src="https://media.giphy.com/media/QvBoMEcQ7DQXK/giphy.gif" alt="Spinning Duck GIF">
-    <img class="bottom-right-gif" src="https://media.giphy.com/media/3o7aCTfyhYawdOXcFW/giphy.gif" alt="Spinning Fish GIF">
-    
-    <div class="card">
-        <div class="title">🎉 Happy Birthday! 🎂</div>
-        <div class="message">Wishing you a fantastic day filled with love and joy! 🥳</div>
-        <img class="gif" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Cute Birthday GIF">
+    <div class="container">
+        <img class="drawing" src="image.png" alt="Birthday Drawing">
+        <div class="card">
+            <div class="title">🎉 Happy Birthday! 🎂</div>
+            <div class="message">Wishing you a fantastic day filled with love and joy! 🥳</div>
+            <img class="gif" src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Cute Birthday GIF">
+        </div>
     </div>
+    <img class="top-right-gif" src="https://giphy.com/gifs/spin-silly-fabulous-rice-tPURSzAUvkkTrg8VrZ" alt="Spinning Cat GIF">
+    <img class="bottom-left-gif" src="https://giphy.com/gifs/vibes-vibing-vibin-GeimqsH0TLDt4tScGw" alt="Spinning Duck GIF">
+    <img class="bottom-right-gif" src="https://giphy.com/gifs/animated-3d-animal-Y0zTJ7VrKo9P2" alt="Spinning Fish GIF">
     <canvas class="confetti"></canvas>
     
     <script>
@@ -122,4 +125,3 @@
     </script>
 </body>
 </html>
-
